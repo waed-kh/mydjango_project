@@ -5,7 +5,8 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        "full_name": "Waed Khalid Ahmed Abu Swise",
+         "full_name": "Waed Khalid Ahmed",
+        "last_name": "Abu Swise",
         "student_id": "2202555813",
         "address": "Gaza",
         "email": "waed321@gmail.com",

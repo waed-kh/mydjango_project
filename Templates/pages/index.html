@@ -56,13 +56,13 @@
 
 <div class="profile-card">
 
-    <h2>{{ full_name }}</h2>
-    <p><i class="bi bi-person-badge icon"></i>Student ID: {{ student_id }}</p>
-    <p><i class="bi bi-geo-alt icon"></i>Address: {{ address }}</p>
-    <p><i class="bi bi-envelope icon"></i>Email: {{ email }}</p>
-    <p><i class="bi bi-info-circle icon"></i>{{ extra_info }}</p>
+    <h2> {{ full_name|capfirst|add:" "|add:last_name }}</h2>
+    <p><i class="bi bi-person-badge icon"></i>Student ID: {{ student_id|stringformat:"s" }}</p>
+    <p><i class="bi bi-geo-alt icon"></i>Address: {{ address|upper }}</p>
+    <p><i class="bi bi-envelope icon"></i>Email:{{ email|default:"No email provided" }}</p>
+    <p><i class="bi bi-info-circle icon"></i> Exta_info:{{ extra_info }}</p>
 
-    
+
 
 </div>
 
